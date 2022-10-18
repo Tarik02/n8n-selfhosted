@@ -1,0 +1,31 @@
+{
+    "database": {
+        "type": "mysqldb",
+        "mysqldb": {
+            "database": "n8n",
+            "host": "127.0.0.1",
+            "user": "n8n",
+            "password": "password"
+        }
+    },
+    "executions": {
+        "mode": "queue"
+    },
+    "queue": {
+        "bull": {
+            "prefix": "n8n",
+            "redis": {
+                "host": "127.0.0.1"
+            }
+        }
+    },
+    "generic": {
+        "timezone": "Europe/Kiev"
+    },
+    "host": "n8n.example.com",
+    "protocol": "https",
+    "port": 5678,
+    "diagnostics": {
+        "enabled": false
+    }
+}

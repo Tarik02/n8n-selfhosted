@@ -1,0 +1,13 @@
+{
+  "name": "n8n-selfhosted",
+  "private": true,
+  "packageManager": "yarn@3.2.3",
+  "scripts": {
+    "start": "N8N_CONFIG_FILES=config.json n8n start",
+    "webhook": "N8N_CONFIG_FILES=config.json,config.webhook.json n8n webhook",
+    "worker": "N8N_CONFIG_FILES=config.json n8n worker"
+  },
+  "dependencies": {
+    "n8n": "*"
+  }
+}

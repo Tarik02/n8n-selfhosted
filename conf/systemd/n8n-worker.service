@@ -1,0 +1,13 @@
+[Unit]
+Description=n8n worker
+After=network.target
+
+[Service]
+WorkingDirectory=/path/to/n8n-selfhosted
+Restart=always
+
+EnvironmentFile=/path/to/n8n-selfhosted/.env
+ExecStart=yarn worker
+
+[Install]
+WantedBy=default.target

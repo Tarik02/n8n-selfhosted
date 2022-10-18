@@ -1,0 +1,15 @@
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+node_modules/
+data/
+
+yarn.lock
+
+.env
+config.json
+config.webhook.json
